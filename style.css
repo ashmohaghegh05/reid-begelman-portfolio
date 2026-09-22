@@ -2,9 +2,6 @@
    REID BEGELMAN PORTFOLIO
    ============================== */
 
-
-/* BASIC PAGE */
-
 * {
     box-sizing: border-box;
 }
@@ -16,10 +13,8 @@ html {
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-
     background-color: #f4efe6;
     color: #172033;
-
     line-height: 1.6;
 }
 
@@ -33,7 +28,6 @@ body {
 
 .nav-container {
     max-width: 1150px;
-
     margin: 0 auto;
     padding: 22px 30px;
 
@@ -44,10 +38,8 @@ body {
 
 .brand {
     color: #d97732;
-
     font-size: 28px;
     font-weight: bold;
-
     text-decoration: none;
 }
 
@@ -58,10 +50,8 @@ body {
 
 .nav-links a {
     color: white;
-
     text-decoration: none;
     font-size: 15px;
-
     padding-bottom: 5px;
 }
 
@@ -78,7 +68,6 @@ body {
 
 .hero {
     max-width: 1150px;
-
     margin: 0 auto;
     padding: 80px 30px;
 
@@ -91,29 +80,23 @@ body {
 
 .eyebrow {
     color: #b65f26;
-
     font-size: 13px;
     font-weight: bold;
-
     letter-spacing: 2px;
 }
 
 .hero h1 {
     margin: 15px 0 25px;
-
     color: #111827;
 
     font-size: 82px;
     line-height: 0.95;
-
     letter-spacing: -3px;
 }
 
 .hero-intro {
     max-width: 570px;
-
     font-size: 20px;
-
     color: #485366;
 }
 
@@ -182,7 +165,6 @@ body {
 
 .secondary-button {
     border: 2px solid #111827;
-
     color: #111827;
     background-color: transparent;
 }
@@ -193,7 +175,7 @@ body {
 }
 
 
-/* CONTENT SECTIONS */
+/* MAIN SECTIONS */
 
 .content-section {
     max-width: 1150px;
@@ -309,7 +291,7 @@ body {
 }
 
 
-/* CLOSING */
+/* CLOSING SECTION */
 
 .closing-section {
     background-color: #d97732;
@@ -332,7 +314,7 @@ body {
 }
 
 
-/* RESUME PAGE */
+/* OTHER PAGE HEADINGS */
 
 .page-heading {
     max-width: 1150px;
@@ -348,6 +330,9 @@ body {
 
     color: #111827;
 }
+
+
+/* RESUME */
 
 .resume-container {
     max-width: 1150px;
@@ -374,7 +359,7 @@ body {
 }
 
 
-/* CONTACT PAGE */
+/* CONTACT */
 
 .contact-grid {
     max-width: 1150px;
@@ -428,7 +413,7 @@ footer {
 }
 
 
-/* RESPONSIVE DESIGN */
+/* RESPONSIVE */
 
 @media (max-width: 800px) {
 
@@ -468,6 +453,7 @@ footer {
 
     footer {
         display: block;
+
         text-align: center;
     }
 
