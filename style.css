@@ -1,0 +1,474 @@
+/* ==============================
+   REID BEGELMAN PORTFOLIO
+   ============================== */
+
+
+/* BASIC PAGE */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #f4efe6;
+    color: #172033;
+
+    line-height: 1.6;
+}
+
+
+/* HEADER */
+
+.site-header {
+    background-color: #111827;
+    border-bottom: 1px solid #303b50;
+}
+
+.nav-container {
+    max-width: 1150px;
+
+    margin: 0 auto;
+    padding: 22px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    color: #d97732;
+
+    font-size: 28px;
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white;
+
+    text-decoration: none;
+    font-size: 15px;
+
+    padding-bottom: 5px;
+}
+
+.nav-links a:hover {
+    color: #d97732;
+}
+
+.nav-links .active {
+    border-bottom: 2px solid #d97732;
+}
+
+
+/* HERO */
+
+.hero {
+    max-width: 1150px;
+
+    margin: 0 auto;
+    padding: 80px 30px;
+
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+
+    gap: 70px;
+    align-items: center;
+}
+
+.eyebrow {
+    color: #b65f26;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    margin: 15px 0 25px;
+
+    color: #111827;
+
+    font-size: 82px;
+    line-height: 0.95;
+
+    letter-spacing: -3px;
+}
+
+.hero-intro {
+    max-width: 570px;
+
+    font-size: 20px;
+
+    color: #485366;
+}
+
+
+/* PHOTO */
+
+.portrait-area {
+    position: relative;
+}
+
+.profile-photo {
+    width: 100%;
+    max-width: 420px;
+
+    display: block;
+
+    border-radius: 3px;
+
+    box-shadow: 18px 18px 0 #d97732;
+}
+
+.photo-number {
+    position: absolute;
+
+    top: -35px;
+    right: 10px;
+
+    font-size: 90px;
+    font-weight: bold;
+
+    color: #ddd4c6;
+
+    z-index: -1;
+}
+
+
+/* BUTTONS */
+
+.hero-buttons {
+    margin-top: 30px;
+
+    display: flex;
+    gap: 14px;
+
+    flex-wrap: wrap;
+}
+
+.primary-button,
+.secondary-button {
+    display: inline-block;
+
+    padding: 13px 22px;
+
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.primary-button {
+    background-color: #111827;
+    color: white;
+}
+
+.primary-button:hover {
+    background-color: #d97732;
+}
+
+.secondary-button {
+    border: 2px solid #111827;
+
+    color: #111827;
+    background-color: transparent;
+}
+
+.secondary-button:hover {
+    background-color: #111827;
+    color: white;
+}
+
+
+/* CONTENT SECTIONS */
+
+.content-section {
+    max-width: 1150px;
+
+    margin: 0 auto;
+    padding: 75px 30px;
+
+    display: grid;
+    grid-template-columns: 180px 1fr;
+
+    gap: 45px;
+
+    border-top: 1px solid #cec5b8;
+}
+
+.section-label {
+    color: #b65f26;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    letter-spacing: 1.5px;
+}
+
+.section-content h2 {
+    margin-top: 0;
+    margin-bottom: 25px;
+
+    font-size: 42px;
+
+    color: #111827;
+}
+
+.large-text {
+    font-size: 23px;
+    max-width: 780px;
+}
+
+
+/* INTEREST CARDS */
+
+.focus-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 18px;
+}
+
+.focus-card {
+    background-color: #111827;
+    color: white;
+
+    padding: 28px;
+
+    min-height: 270px;
+}
+
+.focus-card h3 {
+    margin-top: 45px;
+
+    font-size: 24px;
+}
+
+.focus-card p {
+    color: #cdd3dc;
+}
+
+.focus-card .card-number {
+    color: #d97732;
+
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+/* TIMELINE */
+
+.timeline {
+    border-left: 2px solid #d97732;
+
+    padding-left: 30px;
+}
+
+.timeline-item {
+    display: grid;
+
+    grid-template-columns: 85px 1fr;
+
+    gap: 25px;
+
+    margin-bottom: 35px;
+}
+
+.timeline-item h3 {
+    margin: 0;
+
+    font-size: 22px;
+}
+
+.timeline-item p {
+    margin: 4px 0;
+}
+
+.timeline-year {
+    color: #b65f26;
+
+    font-weight: bold;
+}
+
+.muted {
+    color: #687386;
+}
+
+
+/* CLOSING */
+
+.closing-section {
+    background-color: #d97732;
+
+    padding: 80px 30px;
+
+    text-align: center;
+}
+
+.closing-section .eyebrow {
+    color: #111827;
+}
+
+.closing-section h2 {
+    margin: 15px 0 30px;
+
+    font-size: 48px;
+
+    color: #111827;
+}
+
+
+/* RESUME PAGE */
+
+.page-heading {
+    max-width: 1150px;
+
+    margin: 0 auto;
+    padding: 75px 30px 45px;
+}
+
+.page-heading h1 {
+    margin: 10px 0;
+
+    font-size: 65px;
+
+    color: #111827;
+}
+
+.resume-container {
+    max-width: 1150px;
+
+    margin: 0 auto;
+    padding: 0 30px 70px;
+}
+
+.resume-box {
+    background-color: white;
+
+    padding: 35px;
+
+    border-top: 5px solid #d97732;
+}
+
+.resume-viewer {
+    width: 100%;
+    height: 760px;
+
+    border: 1px solid #d4d4d4;
+
+    margin-top: 30px;
+}
+
+
+/* CONTACT PAGE */
+
+.contact-grid {
+    max-width: 1150px;
+
+    margin: 0 auto;
+    padding: 0 30px 80px;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 18px;
+}
+
+.contact-card {
+    background-color: #111827;
+    color: white;
+
+    padding: 35px;
+
+    min-height: 220px;
+}
+
+.contact-card h2 {
+    color: #d97732;
+}
+
+.contact-card a {
+    color: white;
+
+    text-decoration: none;
+}
+
+.contact-card a:hover {
+    text-decoration: underline;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #111827;
+    color: #aeb7c6;
+
+    padding: 30px;
+
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 13px;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 800px) {
+
+    .nav-container {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+
+        padding-top: 50px;
+    }
+
+    .hero h1 {
+        font-size: 58px;
+    }
+
+    .profile-photo {
+        max-width: 330px;
+    }
+
+    .content-section {
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+    }
+
+    .focus-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        display: block;
+        text-align: center;
+    }
+
+}
