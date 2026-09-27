@@ -2,6 +2,19 @@
    REID BEGELMAN PORTFOLIO
    ============================== */
 
+:root {
+    --navy: #111827;
+    --navy-light: #303b50;
+    --cream: #f4efe6;
+    --orange: #d97732;
+    --orange-dark: #b65f26;
+    --text: #172033;
+    --text-secondary: #485366;
+    --text-light: #cdd3dc;
+    --border: #cec5b8;
+    --white: #ffffff;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -12,22 +25,38 @@ html {
 
 body {
     margin: 0;
+
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f4efe6;
-    color: #172033;
+
+    background-color: var(--cream);
+    color: var(--text);
+
     line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* ACCESSIBILITY */
+
+a:focus-visible {
+    outline: 3px solid var(--orange);
+    outline-offset: 4px;
 }
 
 
 /* HEADER */
 
 .site-header {
-    background-color: #111827;
-    border-bottom: 1px solid #303b50;
+    background-color: var(--navy);
+    border-bottom: 1px solid var(--navy-light);
 }
 
 .nav-container {
     max-width: 1150px;
+
     margin: 0 auto;
     padding: 22px 30px;
 
@@ -37,9 +66,11 @@ body {
 }
 
 .brand {
-    color: #d97732;
+    color: var(--orange);
+
     font-size: 28px;
     font-weight: bold;
+
     text-decoration: none;
 }
 
@@ -49,18 +80,22 @@ body {
 }
 
 .nav-links a {
-    color: white;
+    color: var(--white);
+
     text-decoration: none;
     font-size: 15px;
+
     padding-bottom: 5px;
+
+    transition: color 0.2s ease;
 }
 
 .nav-links a:hover {
-    color: #d97732;
+    color: var(--orange);
 }
 
 .nav-links .active {
-    border-bottom: 2px solid #d97732;
+    border-bottom: 2px solid var(--orange);
 }
 
 
@@ -68,6 +103,7 @@ body {
 
 .hero {
     max-width: 1150px;
+
     margin: 0 auto;
     padding: 80px 30px;
 
@@ -79,25 +115,31 @@ body {
 }
 
 .eyebrow {
-    color: #b65f26;
+    color: var(--orange-dark);
+
     font-size: 13px;
     font-weight: bold;
+
     letter-spacing: 2px;
 }
 
 .hero h1 {
     margin: 15px 0 25px;
-    color: #111827;
 
-    font-size: 82px;
+    color: var(--navy);
+
+    font-size: clamp(58px, 8vw, 82px);
     line-height: 0.95;
+
     letter-spacing: -3px;
 }
 
 .hero-intro {
     max-width: 570px;
+
     font-size: 20px;
-    color: #485366;
+
+    color: var(--text-secondary);
 }
 
 
@@ -105,9 +147,13 @@ body {
 
 .portrait-area {
     position: relative;
+    isolation: isolate;
 }
 
 .profile-photo {
+    position: relative;
+    z-index: 2;
+
     width: 100%;
     max-width: 420px;
 
@@ -115,21 +161,21 @@ body {
 
     border-radius: 3px;
 
-    box-shadow: 18px 18px 0 #d97732;
+    box-shadow: 18px 18px 0 var(--orange);
 }
 
 .photo-number {
     position: absolute;
 
-    top: -35px;
-    right: 10px;
+    top: -45px;
+    right: 5px;
+
+    z-index: 1;
 
     font-size: 90px;
     font-weight: bold;
 
     color: #ddd4c6;
-
-    z-index: -1;
 }
 
 
@@ -144,6 +190,10 @@ body {
     flex-wrap: wrap;
 }
 
+.centered-buttons {
+    justify-content: center;
+}
+
 .primary-button,
 .secondary-button {
     display: inline-block;
@@ -152,26 +202,31 @@ body {
 
     text-decoration: none;
     font-weight: bold;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
 }
 
 .primary-button {
-    background-color: #111827;
-    color: white;
+    background-color: var(--navy);
+    color: var(--white);
 }
 
 .primary-button:hover {
-    background-color: #d97732;
+    background-color: var(--orange);
 }
 
 .secondary-button {
-    border: 2px solid #111827;
-    color: #111827;
+    border: 2px solid var(--navy);
+
+    color: var(--navy);
     background-color: transparent;
 }
 
 .secondary-button:hover {
-    background-color: #111827;
-    color: white;
+    background-color: var(--navy);
+    color: var(--white);
 }
 
 
@@ -188,11 +243,11 @@ body {
 
     gap: 45px;
 
-    border-top: 1px solid #cec5b8;
+    border-top: 1px solid var(--border);
 }
 
 .section-label {
-    color: #b65f26;
+    color: var(--orange-dark);
 
     font-size: 12px;
     font-weight: bold;
@@ -206,7 +261,7 @@ body {
 
     font-size: 42px;
 
-    color: #111827;
+    color: var(--navy);
 }
 
 .large-text {
@@ -215,7 +270,7 @@ body {
 }
 
 
-/* INTEREST CARDS */
+/* FOCUS CARDS */
 
 .focus-grid {
     display: grid;
@@ -226,12 +281,21 @@ body {
 }
 
 .focus-card {
-    background-color: #111827;
-    color: white;
+    background-color: var(--navy);
+    color: var(--white);
 
     padding: 28px;
 
     min-height: 270px;
+
+    transition:
+        transform 0.2s ease,
+        background-color 0.2s ease;
+}
+
+.focus-card:hover {
+    transform: translateY(-4px);
+    background-color: #18243a;
 }
 
 .focus-card h3 {
@@ -241,11 +305,11 @@ body {
 }
 
 .focus-card p {
-    color: #cdd3dc;
+    color: var(--text-light);
 }
 
 .focus-card .card-number {
-    color: #d97732;
+    color: var(--orange);
 
     font-size: 13px;
     font-weight: bold;
@@ -255,7 +319,7 @@ body {
 /* TIMELINE */
 
 .timeline {
-    border-left: 2px solid #d97732;
+    border-left: 2px solid var(--orange);
 
     padding-left: 30px;
 }
@@ -270,6 +334,10 @@ body {
     margin-bottom: 35px;
 }
 
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
 .timeline-item h3 {
     margin: 0;
 
@@ -281,7 +349,7 @@ body {
 }
 
 .timeline-year {
-    color: #b65f26;
+    color: var(--orange-dark);
 
     font-weight: bold;
 }
@@ -291,10 +359,10 @@ body {
 }
 
 
-/* CLOSING SECTION */
+/* CLOSING */
 
 .closing-section {
-    background-color: #d97732;
+    background-color: var(--orange);
 
     padding: 80px 30px;
 
@@ -302,15 +370,15 @@ body {
 }
 
 .closing-section .eyebrow {
-    color: #111827;
+    color: var(--navy);
 }
 
 .closing-section h2 {
     margin: 15px 0 30px;
 
-    font-size: 48px;
+    font-size: clamp(36px, 5vw, 48px);
 
-    color: #111827;
+    color: var(--navy);
 }
 
 
@@ -326,9 +394,9 @@ body {
 .page-heading h1 {
     margin: 10px 0;
 
-    font-size: 65px;
+    font-size: clamp(48px, 7vw, 65px);
 
-    color: #111827;
+    color: var(--navy);
 }
 
 
@@ -342,11 +410,11 @@ body {
 }
 
 .resume-box {
-    background-color: white;
+    background-color: var(--white);
 
     padding: 35px;
 
-    border-top: 5px solid #d97732;
+    border-top: 5px solid var(--orange);
 }
 
 .resume-viewer {
@@ -356,6 +424,11 @@ body {
     border: 1px solid #d4d4d4;
 
     margin-top: 30px;
+}
+
+.pdf-fallback {
+    color: var(--text-secondary);
+    font-size: 14px;
 }
 
 
@@ -375,22 +448,36 @@ body {
 }
 
 .contact-card {
-    background-color: #111827;
-    color: white;
+    background-color: var(--navy);
+    color: var(--white);
 
     padding: 35px;
 
     min-height: 220px;
+
+    transition: transform 0.2s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-4px);
 }
 
 .contact-card h2 {
-    color: #d97732;
+    color: var(--orange);
+}
+
+.contact-card .card-number {
+    color: var(--orange);
+    font-size: 13px;
+    font-weight: bold;
 }
 
 .contact-card a {
-    color: white;
+    color: var(--white);
 
     text-decoration: none;
+
+    overflow-wrap: anywhere;
 }
 
 .contact-card a:hover {
@@ -401,13 +488,15 @@ body {
 /* FOOTER */
 
 footer {
-    background-color: #111827;
+    background-color: var(--navy);
     color: #aeb7c6;
 
     padding: 30px;
 
     display: flex;
     justify-content: space-between;
+
+    gap: 20px;
 
     font-size: 13px;
 }
@@ -419,28 +508,28 @@ footer {
 
     .nav-container {
         flex-direction: column;
-
         gap: 15px;
     }
 
     .hero {
         grid-template-columns: 1fr;
 
+        gap: 45px;
+
         padding-top: 50px;
     }
 
-    .hero h1 {
-        font-size: 58px;
-    }
-
-    .profile-photo {
-        max-width: 330px;
+    .portrait-area {
+        max-width: 350px;
     }
 
     .content-section {
         grid-template-columns: 1fr;
 
         gap: 15px;
+
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
 
     .focus-grid {
@@ -451,10 +540,49 @@ footer {
         grid-template-columns: 1fr;
     }
 
+    .resume-viewer {
+        height: 520px;
+    }
+
     footer {
         display: block;
 
         text-align: center;
+    }
+
+}
+
+
+@media (max-width: 520px) {
+
+    .nav-links {
+        width: 100%;
+
+        justify-content: center;
+        gap: 18px;
+
+        flex-wrap: wrap;
+    }
+
+    .hero,
+    .content-section,
+    .page-heading,
+    .resume-container,
+    .contact-grid {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .hero h1 {
+        letter-spacing: -2px;
+    }
+
+    .large-text {
+        font-size: 20px;
+    }
+
+    .resume-box {
+        padding: 22px;
     }
 
 }
