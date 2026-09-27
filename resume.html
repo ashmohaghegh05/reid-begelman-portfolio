@@ -11,8 +11,11 @@
     <meta name="description"
           content="Resume of Reid Begelman.">
 
+    <meta name="theme-color" content="#111827">
+
     <title>Resume | Reid Begelman</title>
 
+    <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -21,7 +24,8 @@
 
     <header class="site-header">
 
-        <nav class="nav-container">
+        <nav class="nav-container"
+             aria-label="Main navigation">
 
             <a class="brand"
                href="index.html">
@@ -35,6 +39,7 @@
                 </a>
 
                 <a class="active"
+                   aria-current="page"
                    href="resume.html">
                     Resume
                 </a>
@@ -61,8 +66,8 @@
             <h1>Resume</h1>
 
             <p class="large-text">
-                A closer look at my academic and professional
-                experience.
+                A closer look at my academic and
+                professional experience.
             </p>
 
         </section>
@@ -75,13 +80,14 @@
                 <h2>Reid Begelman</h2>
 
                 <p>
-                    Open my full resume below or view it
-                    directly on this page.
+                    Open my full resume in a new tab or
+                    view it directly below.
                 </p>
 
                 <a
                     href="reid-begelman-resume.pdf"
                     target="_blank"
+                    rel="noopener noreferrer"
                     class="primary-button"
                 >
                     Open Resume PDF
@@ -90,9 +96,13 @@
                 <iframe
                     class="resume-viewer"
                     src="reid-begelman-resume.pdf"
-                    title="Reid Begelman Resume"
-                >
+                    title="Reid Begelman Resume">
                 </iframe>
+
+                <p class="pdf-fallback">
+                    If the embedded resume does not display on your
+                    device, use the Open Resume PDF button above.
+                </p>
 
             </div>
 
