@@ -155,7 +155,7 @@ a:focus-visible {
     z-index: 2;
 
     width: 100%;
-    max-width: 220px;
+    max-width: 420px;
 
     display: block;
 
@@ -523,10 +523,6 @@ footer {
         max-width: 350px;
     }
 
-    .profile-photo {
-        max-width: 190px;
-    }
-
     .content-section {
         grid-template-columns: 1fr;
 
@@ -579,10 +575,6 @@ footer {
 
     .hero h1 {
         letter-spacing: -2px;
-    }
-
-    .profile-photo {
-        max-width: 165px;
     }
 
     .large-text {
