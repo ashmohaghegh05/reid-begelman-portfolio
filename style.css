@@ -1,6 +1,19 @@
-/* =========================
-   GENERAL
-   ========================= */
+/* ==============================
+   REID BEGELMAN PORTFOLIO
+   ============================== */
+
+:root {
+    --navy: #111827;
+    --navy-light: #303b50;
+    --cream: #f4efe6;
+    --orange: #d97732;
+    --orange-dark: #b65f26;
+    --text: #172033;
+    --text-secondary: #485366;
+    --text-light: #cdd3dc;
+    --border: #cec5b8;
+    --white: #ffffff;
+}
 
 * {
     box-sizing: border-box;
@@ -12,576 +25,560 @@ html {
 
 body {
     margin: 0;
+
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f4efe6;
-    color: #172033;
+
+    background-color: var(--cream);
+    color: var(--text);
+
     line-height: 1.6;
 }
 
-a {
-    color: inherit;
+img {
+    max-width: 100%;
 }
 
 
-/* =========================
-   HEADER & NAVIGATION
-   ========================= */
+/* ACCESSIBILITY */
+
+a:focus-visible {
+    outline: 3px solid var(--orange);
+    outline-offset: 4px;
+}
+
+
+/* HEADER */
 
 .site-header {
-    background-color: #f4efe6;
-    border-bottom: 1px solid #cec5b8;
+    background-color: var(--navy);
+    border-bottom: 1px solid var(--navy-light);
 }
 
 .nav-container {
-    max-width: 1180px;
+    max-width: 1150px;
+
     margin: 0 auto;
-    padding: 24px 32px;
+    padding: 22px 30px;
 
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
 }
 
 .brand {
-    color: #111827;
-    font-size: 23px;
+    color: var(--orange);
+
+    font-size: 28px;
     font-weight: bold;
+
     text-decoration: none;
 }
 
 .nav-links {
     display: flex;
-    gap: 32px;
+    gap: 30px;
 }
 
 .nav-links a {
-    color: #111827;
-    font-weight: bold;
+    color: var(--white);
+
     text-decoration: none;
-    padding-bottom: 6px;
-    border-bottom: 2px solid transparent;
+    font-size: 15px;
+
+    padding-bottom: 5px;
+
+    transition: color 0.2s ease;
 }
 
-.nav-links a:hover,
-.nav-links a.active {
-    border-bottom-color: #d97732;
+.nav-links a:hover {
+    color: var(--orange);
+}
+
+.nav-links .active {
+    border-bottom: 2px solid var(--orange);
 }
 
 
-/* =========================
-   HERO
-   ========================= */
+/* HERO */
 
 .hero {
-    max-width: 1180px;
+    max-width: 1150px;
+
     margin: 0 auto;
-    padding: 80px 32px;
+    padding: 80px 30px;
 
     display: grid;
-    grid-template-columns: 1.35fr 0.65fr;
+    grid-template-columns: 1.1fr 0.9fr;
+
     gap: 70px;
     align-items: center;
 }
 
 .eyebrow {
-    margin: 0 0 18px;
-    color: #b65f26;
+    color: var(--orange-dark);
+
     font-size: 13px;
     font-weight: bold;
+
     letter-spacing: 2px;
 }
 
 .hero h1 {
-    margin: 0;
-    color: #111827;
-    font-size: 86px;
-    line-height: 0.9;
-    letter-spacing: -4px;
+    margin: 15px 0 25px;
+
+    color: var(--navy);
+
+    font-size: clamp(58px, 8vw, 82px);
+    line-height: 0.95;
+
+    letter-spacing: -3px;
 }
 
 .hero-intro {
-    max-width: 600px;
-    margin-top: 30px;
-    color: #485366;
+    max-width: 570px;
+
     font-size: 20px;
-}
 
-.hero-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-    margin-top: 30px;
+    color: var(--text-secondary);
 }
 
 
-/* =========================
-   BUTTONS
-   ========================= */
-
-.primary-button,
-.secondary-button {
-    display: inline-block;
-    padding: 12px 20px;
-    font-weight: bold;
-    text-decoration: none;
-    border: 1px solid #111827;
-    transition: 0.2s ease;
-}
-
-.primary-button {
-    background-color: #111827;
-    color: white;
-}
-
-.primary-button:hover {
-    background-color: #283448;
-}
-
-.secondary-button {
-    background-color: transparent;
-    color: #111827;
-}
-
-.secondary-button:hover {
-    background-color: #111827;
-    color: white;
-}
-
-
-/* =========================
-   PORTRAIT
-   ========================= */
+/* PHOTO */
 
 .portrait-area {
     position: relative;
-    display: flex;
-    justify-content: center;
+    isolation: isolate;
+}
+
+.profile-photo {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+    max-width: 220px;
+
+    display: block;
+
+    border-radius: 3px;
+
+    box-shadow: 18px 18px 0 var(--orange);
 }
 
 .photo-number {
     position: absolute;
-    top: -28px;
-    left: 0;
-    color: #b65f26;
-    font-size: 12px;
+
+    top: -45px;
+    right: 5px;
+
+    z-index: 1;
+
+    font-size: 90px;
     font-weight: bold;
-    letter-spacing: 1px;
-}
 
-/* Smaller headshot based on client feedback */
-
-.profile-photo {
-    width: 100%;
-    max-width: 220px;
-    height: auto;
-    object-fit: cover;
-    display: block;
+    color: #ddd4c6;
 }
 
 
-/* =========================
-   MAIN CONTENT SECTIONS
-   ========================= */
+/* BUTTONS */
+
+.hero-buttons {
+    margin-top: 30px;
+
+    display: flex;
+    gap: 14px;
+
+    flex-wrap: wrap;
+}
+
+.centered-buttons {
+    justify-content: center;
+}
+
+.primary-button,
+.secondary-button {
+    display: inline-block;
+
+    padding: 13px 22px;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+}
+
+.primary-button {
+    background-color: var(--navy);
+    color: var(--white);
+}
+
+.primary-button:hover {
+    background-color: var(--orange);
+}
+
+.secondary-button {
+    border: 2px solid var(--navy);
+
+    color: var(--navy);
+    background-color: transparent;
+}
+
+.secondary-button:hover {
+    background-color: var(--navy);
+    color: var(--white);
+}
+
+
+/* MAIN SECTIONS */
 
 .content-section {
-    max-width: 1180px;
+    max-width: 1150px;
+
     margin: 0 auto;
-    padding: 75px 32px;
+    padding: 75px 30px;
 
     display: grid;
     grid-template-columns: 180px 1fr;
+
     gap: 45px;
 
-    border-top: 1px solid #cec5b8;
+    border-top: 1px solid var(--border);
 }
 
 .section-label {
-    padding-top: 8px;
-    color: #b65f26;
+    color: var(--orange-dark);
+
     font-size: 12px;
     font-weight: bold;
+
     letter-spacing: 1.5px;
 }
 
 .section-content h2 {
     margin-top: 0;
     margin-bottom: 25px;
-    color: #111827;
-    font-size: 45px;
-    line-height: 1.1;
-}
 
-.section-content p {
-    max-width: 760px;
+    font-size: 42px;
+
+    color: var(--navy);
 }
 
 .large-text {
-    font-size: 20px;
-    line-height: 1.7;
+    font-size: 23px;
+    max-width: 780px;
 }
 
 
-/* =========================
-   FOCUS CARDS
-   ========================= */
+/* FOCUS CARDS */
 
 .focus-grid {
     display: grid;
+
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+
+    gap: 18px;
 }
 
 .focus-card {
-    background-color: rgba(255, 255, 255, 0.5);
-    border-top: 3px solid #d97732;
-    padding: 26px;
-    min-height: 250px;
+    background-color: var(--navy);
+    color: var(--white);
+
+    padding: 28px;
+
+    min-height: 270px;
+
+    transition:
+        transform 0.2s ease,
+        background-color 0.2s ease;
 }
 
-.card-number {
-    margin-top: 0;
-    color: #b65f26;
-    font-size: 12px;
-    font-weight: bold;
+.focus-card:hover {
+    transform: translateY(-4px);
+    background-color: #18243a;
 }
 
 .focus-card h3 {
-    margin: 20px 0 12px;
-    color: #111827;
-    font-size: 25px;
+    margin-top: 45px;
+
+    font-size: 24px;
 }
 
 .focus-card p {
-    color: #485366;
+    color: var(--text-light);
+}
+
+.focus-card .card-number {
+    color: var(--orange);
+
+    font-size: 13px;
+    font-weight: bold;
 }
 
 
-/* =========================
-   EXPERIENCE TIMELINE
-   ========================= */
+/* TIMELINE */
 
 .timeline {
-    border-top: 1px solid #cec5b8;
+    border-left: 2px solid var(--orange);
+
+    padding-left: 30px;
 }
 
 .timeline-item {
     display: grid;
-    grid-template-columns: 120px 1fr;
+
+    grid-template-columns: 85px 1fr;
+
     gap: 25px;
 
-    padding: 25px 0;
-    border-bottom: 1px solid #cec5b8;
+    margin-bottom: 35px;
 }
 
-.timeline-year {
-    margin: 0;
-    color: #b65f26;
-    font-weight: bold;
+.timeline-item:last-child {
+    margin-bottom: 0;
 }
 
 .timeline-item h3 {
-    margin: 0 0 5px;
-    color: #111827;
+    margin: 0;
+
+    font-size: 22px;
 }
 
 .timeline-item p {
-    margin: 3px 0;
+    margin: 4px 0;
+}
+
+.timeline-year {
+    color: var(--orange-dark);
+
+    font-weight: bold;
 }
 
 .muted {
-    color: #697282;
+    color: #687386;
 }
 
 
-/* =========================
-   CLOSING SECTION
-   ========================= */
+/* CLOSING */
 
 .closing-section {
-    background-color: #111827;
-    color: white;
-    padding: 75px max(32px, calc((100vw - 1180px) / 2));
+    background-color: var(--orange);
+
+    padding: 80px 30px;
+
+    text-align: center;
 }
 
 .closing-section .eyebrow {
-    color: #e59b65;
+    color: var(--navy);
 }
 
 .closing-section h2 {
-    margin: 0;
-    max-width: 750px;
-    font-size: 56px;
-    line-height: 1.1;
-    letter-spacing: -2px;
-}
+    margin: 15px 0 30px;
 
-.closing-section .primary-button {
-    background-color: white;
-    color: #111827;
-    border-color: white;
-}
+    font-size: clamp(36px, 5vw, 48px);
 
-.closing-section .primary-button:hover {
-    background-color: #f4efe6;
-}
-
-.closing-section .secondary-button {
-    color: white;
-    border-color: white;
-}
-
-.closing-section .secondary-button:hover {
-    background-color: white;
-    color: #111827;
+    color: var(--navy);
 }
 
 
-/* =========================
-   RESUME & CONTACT
-   PAGE HEADING
-   ========================= */
+/* OTHER PAGE HEADINGS */
 
 .page-heading {
-    max-width: 1180px;
+    max-width: 1150px;
+
     margin: 0 auto;
-    padding: 75px 32px 50px;
+    padding: 75px 30px 45px;
 }
 
 .page-heading h1 {
-    margin: 0;
-    color: #111827;
-    font-size: 70px;
-    line-height: 1;
-    letter-spacing: -3px;
-}
+    margin: 10px 0;
 
-.page-heading .large-text {
-    max-width: 750px;
-    margin-top: 25px;
-    color: #485366;
+    font-size: clamp(48px, 7vw, 65px);
+
+    color: var(--navy);
 }
 
 
-/* =========================
-   CONTACT PAGE
-   ========================= */
-
-.contact-grid {
-    max-width: 1180px;
-    margin: 0 auto;
-    padding: 15px 32px 85px;
-
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-.contact-card {
-    background-color: rgba(255, 255, 255, 0.5);
-    border-top: 3px solid #d97732;
-    padding: 28px;
-    min-height: 220px;
-}
-
-.contact-card h2 {
-    margin: 20px 0 15px;
-    color: #111827;
-    font-size: 27px;
-}
-
-.contact-card a {
-    color: #111827;
-    font-weight: bold;
-    text-decoration: none;
-    border-bottom: 1px solid #d97732;
-}
-
-.contact-card a:hover {
-    color: #b65f26;
-}
-
-
-/* =========================
-   RESUME PAGE
-   ========================= */
+/* RESUME */
 
 .resume-container {
-    max-width: 1180px;
+    max-width: 1150px;
+
     margin: 0 auto;
-    padding: 10px 32px 80px;
+    padding: 0 30px 70px;
 }
 
 .resume-box {
-    background-color: rgba(255, 255, 255, 0.5);
-    border-top: 3px solid #d97732;
+    background-color: var(--white);
+
     padding: 35px;
-}
 
-.resume-box h2 {
-    margin-top: 0;
-    color: #111827;
-    font-size: 32px;
-}
-
-.resume-box > p {
-    color: #485366;
-    margin-bottom: 25px;
+    border-top: 5px solid var(--orange);
 }
 
 .resume-viewer {
     width: 100%;
-    height: 850px;
-    margin-top: 35px;
-    border: 1px solid #cec5b8;
-    background-color: white;
+    height: 760px;
+
+    border: 1px solid #d4d4d4;
+
+    margin-top: 30px;
+}
+
+.pdf-fallback {
+    color: var(--text-secondary);
+    font-size: 14px;
 }
 
 
-/* =========================
-   FOOTER
-   ========================= */
+/* CONTACT */
+
+.contact-grid {
+    max-width: 1150px;
+
+    margin: 0 auto;
+    padding: 0 30px 80px;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 18px;
+}
+
+.contact-card {
+    background-color: var(--navy);
+    color: var(--white);
+
+    padding: 35px;
+
+    min-height: 220px;
+
+    transition: transform 0.2s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-4px);
+}
+
+.contact-card h2 {
+    color: var(--orange);
+}
+
+.contact-card .card-number {
+    color: var(--orange);
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.contact-card a {
+    color: var(--white);
+
+    text-decoration: none;
+
+    overflow-wrap: anywhere;
+}
+
+.contact-card a:hover {
+    text-decoration: underline;
+}
+
+
+/* FOOTER */
 
 footer {
-    background-color: #111827;
-    color: #d5dae2;
-    padding: 28px 32px;
-    text-align: center;
-}
+    background-color: var(--navy);
+    color: #aeb7c6;
 
-footer p {
-    margin: 4px 0;
+    padding: 30px;
+
+    display: flex;
+    justify-content: space-between;
+
+    gap: 20px;
+
     font-size: 13px;
 }
 
 
-/* =========================
-   RESPONSIVE DESIGN
-   ========================= */
+/* RESPONSIVE */
 
 @media (max-width: 800px) {
 
     .nav-container {
-        padding: 20px;
-    }
-
-    .nav-links {
-        gap: 18px;
+        flex-direction: column;
+        gap: 15px;
     }
 
     .hero {
         grid-template-columns: 1fr;
-        gap: 45px;
-        padding: 55px 20px;
-    }
 
-    .hero h1 {
-        font-size: 64px;
-        letter-spacing: -3px;
+        gap: 45px;
+
+        padding-top: 50px;
     }
 
     .portrait-area {
-        justify-content: flex-start;
+        max-width: 350px;
     }
 
     .profile-photo {
         max-width: 190px;
     }
 
-    .photo-number {
-        left: 0;
-    }
-
     .content-section {
         grid-template-columns: 1fr;
-        gap: 15px;
-        padding: 55px 20px;
-    }
 
-    .section-content h2 {
-        font-size: 38px;
+        gap: 15px;
+
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
 
     .focus-grid {
         grid-template-columns: 1fr;
     }
 
-    .focus-card {
-        min-height: auto;
-    }
-
-    .timeline-item {
-        grid-template-columns: 90px 1fr;
-    }
-
-    .closing-section {
-        padding: 60px 20px;
-    }
-
-    .closing-section h2 {
-        font-size: 42px;
-    }
-
-    .page-heading {
-        padding: 55px 20px 40px;
-    }
-
-    .page-heading h1 {
-        font-size: 55px;
-    }
-
     .contact-grid {
         grid-template-columns: 1fr;
-        padding: 10px 20px 60px;
-    }
-
-    .contact-card {
-        min-height: auto;
-    }
-
-    .resume-container {
-        padding: 10px 20px 60px;
-    }
-
-    .resume-box {
-        padding: 25px;
     }
 
     .resume-viewer {
-        height: 650px;
+        height: 520px;
     }
+
+    footer {
+        display: block;
+
+        text-align: center;
+    }
+
 }
 
 
-/* =========================
-   SMALL PHONES
-   ========================= */
-
 @media (max-width: 520px) {
 
-    .nav-container {
-        align-items: flex-start;
-    }
-
-    .brand {
-        font-size: 20px;
-    }
-
     .nav-links {
-        gap: 12px;
+        width: 100%;
+
+        justify-content: center;
+        gap: 18px;
+
         flex-wrap: wrap;
-        justify-content: flex-end;
     }
 
-    .nav-links a {
-        font-size: 13px;
+    .hero,
+    .content-section,
+    .page-heading,
+    .resume-container,
+    .contact-grid {
+        padding-left: 18px;
+        padding-right: 18px;
     }
 
     .hero h1 {
-        font-size: 52px;
-    }
-
-    .hero-intro {
-        font-size: 17px;
+        letter-spacing: -2px;
     }
 
     .profile-photo {
@@ -589,33 +586,11 @@ footer p {
     }
 
     .large-text {
-        font-size: 18px;
+        font-size: 20px;
     }
 
-    .timeline-item {
-        grid-template-columns: 1fr;
-        gap: 5px;
+    .resume-box {
+        padding: 22px;
     }
 
-    .hero-buttons {
-        flex-direction: column;
-    }
-
-    .primary-button,
-    .secondary-button {
-        width: 100%;
-        text-align: center;
-    }
-
-    .closing-section h2 {
-        font-size: 36px;
-    }
-
-    .page-heading h1 {
-        font-size: 48px;
-    }
-
-    .resume-viewer {
-        height: 500px;
-    }
 }
