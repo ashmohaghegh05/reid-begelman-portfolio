@@ -350,5 +350,15 @@ The following description was used as the starting direction for AI:
 > The Contact page should clearly show Reid's phone number, email address, and LinkedIn profile.
 >
 > Use semantic HTML including header, nav, main, section, article, and footer. Use one external CSS stylesheet shared by every page. Build the layouts using CSS Grid and Flexbox and make the site responsive on mobile devices.
+
+## Layout Plan
+
+I created a hand-drawn layout sketch before finalizing the website structure.
+
+The sketch shows the planned layout for the About, Resume, and Contact pages, including the navigation, profile section, areas of interest, resume display, and contact information.
+
+The layout sketch is included in this repository as:
+
+`layout-sketch.pdf`
 >
 > Use a restrained professional color system based on dark navy, warm cream, and orange. Avoid excessive gradients, unnecessary effects, and generic AI portfolio styling.
