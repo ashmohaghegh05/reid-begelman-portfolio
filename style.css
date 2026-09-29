@@ -168,16 +168,9 @@ a {
     letter-spacing: 1px;
 }
 
-/*
-   Client feedback:
-   Smaller headshot with a simple border
-   so the professional content remains
-   the main focal point.
-*/
-
 .profile-photo {
     width: 100%;
-    max-width: 260px;
+    max-width: 220px;
     height: auto;
     object-fit: cover;
     display: block;
@@ -493,7 +486,7 @@ footer p {
     }
 
     .profile-photo {
-        max-width: 225px;
+        max-width: 190px;
     }
 
     .photo-number {
@@ -594,9 +587,9 @@ footer p {
     }
 
     .profile-photo {
-        max-width: 195px;
+        max-width: 165px;
         border-width: 3px;
-        padding: 5px;
+        padding: 4px;
     }
 
     .large-text {
