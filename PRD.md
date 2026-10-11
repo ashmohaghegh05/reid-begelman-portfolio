@@ -513,3 +513,10 @@ Every HTML page must include:
 
 ```html
 <link rel="stylesheet" href="style.css">
+
+## Later
+
+These are features that have not been built yet. Their order reflects Reid's priorities from our second conversation on October 10, 2026.
+
+1. Expand the `03 / EXPERIENCE` section with more of Reid's professional and leadership experiences, including his e-board positions.
+2. Add a small amount of additional design while preserving the clean, minimalistic style Reid prefers.
