@@ -334,7 +334,7 @@ a:focus-visible {
     margin-bottom: 35px;
     padding-bottom: 25px;
 
-    border-bottom: 1px solid var(--border);
+    border-bottom: 1px solid var(--orange);
 } 
  
 .timeline-item:last-child { 
