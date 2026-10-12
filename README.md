@@ -6,7 +6,7 @@ Reid Begelman
 
 ## Project
 
-This is a professional portfolio website created for Reid. The site introduces his academic background, professional interests, leadership experience, and work experience.
+This is a professional portfolio website created for Reid Begelman. The site introduces his academic background, professional interests, leadership experience, and work experience.
 
 The website includes:
 
