@@ -25,8 +25,16 @@ The main suggestions were:
 - Keep the navy, cream, and orange color palette.
 - Use the RB initials as a favicon.
 - Make the About section feel less school-focused and more professionally focused.
+- Make the homepage headshot larger and more visually prominent.
+- Include visual branding connected to Reid's professional experience.
 
-One suggestion was to make the photograph larger, but Reid had previously asked for the headshot to be smaller and less of a focal point, so I prioritized the client's preference.
+## How I Used the Feedback
+
+I prioritized Reid's direct feedback while also using the showcase suggestions to improve the site without changing its overall minimalistic style.
+
+The `03 / EXPERIENCE` section was expanded instead of creating a separate Experience page because Reid specifically asked for additional experiences to be added to that existing section.
+
+I also kept the original navy, cream, and orange visual system because both Reid and the showcase feedback supported the clean and professional design.
 
 ## Client Priorities
 
@@ -35,13 +43,33 @@ One suggestion was to make the photograph larger, but Reid had previously asked 
 
 ## AI Decision
 
-For expanding the Experience section, AI suggested adding more entries to the existing timeline, creating expandable experience cards, or creating a separate Experience page. I chose to expand the existing timeline because Reid specifically asked for more experiences under `03 / EXPERIENCE` and wanted to preserve the minimalistic design.
+For the Experience section, AI suggested **expanding the existing timeline, using expandable experience cards, or creating a separate Experience page; I chose the existing timeline because Reid specifically asked for more experiences under `03 / EXPERIENCE` and wanted the site to remain minimalistic.**
 
-## Change Made
+## Changes Made
 
-Based on Reid's October 10 feedback, I expanded the `03 / EXPERIENCE`
-section with additional professional and leadership experiences from
-his resume, including his e-board positions.
+Based on Reid's October 10 feedback, I expanded the `03 / EXPERIENCE` section with additional professional and leadership experiences from his resume, including his e-board positions.
+
+I also added more detail to the Profile section so the site presents Reid's professional background, skills, and career direction more clearly.
+
+## Showcase Changes Implemented
+
+Based on the showcase feedback, I also:
+
+- Added more detail to Reid's professional experiences.
+- Included a more specific example of his work at Restaurant Brands International.
+- Added the Restaurant Brands International logo as a visual element.
+- Added an `RB` favicon using Reid's initials.
+- Increased the size of the homepage headshot so it has more visual presence.
+- Added subtle visual separation between Experience timeline entries.
+- Preserved the resume PDF and LinkedIn links.
+- Preserved the navy, cream, and orange color palette.
+- Kept the overall site clean and minimal rather than redesigning it completely.
+
+## Feedback Not Implemented
+
+I did not create a separate Experience page because Reid specifically asked for his additional experiences to be added under the existing `03 / EXPERIENCE` section.
+
+I also did not add multiple experience photographs because I did not have additional approved photos from Reid. Instead, I used the RBI logo as a professional visual element.
 
 ## Change Commit
 
