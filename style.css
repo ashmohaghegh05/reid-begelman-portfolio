@@ -231,202 +231,7 @@ a:focus-visible {
 .secondary-button:hover { 
     background-color: var(--navy); 
     color: var(--white); 
-}
-
-
-/* IMPACT SECTION */
-
-.impact-section {
-    position: relative;
-
-    background-color: var(--navy);
-    color: var(--white);
-
-    padding: 90px 30px;
-
-    overflow: hidden;
-}
-
-.impact-section::before {
-    content: "RB";
-
-    position: absolute;
-
-    right: -20px;
-    top: -75px;
-
-    font-size: 260px;
-    font-weight: 700;
-
-    color: rgba(255, 255, 255, 0.025);
-
-    line-height: 1;
-
-    pointer-events: none;
-}
-
-.impact-header {
-    max-width: 1150px;
-
-    margin: 0 auto 55px;
-
-    text-align: center;
-
-    position: relative;
-    z-index: 2;
-}
-
-.impact-kicker {
-    margin: 0 0 12px;
-
-    color: var(--orange);
-
-    font-size: 12px;
-    font-weight: bold;
-
-    letter-spacing: 2.5px;
-}
-
-.impact-header h2 {
-    margin: 0;
-
-    font-size: clamp(42px, 6vw, 62px);
-
-    letter-spacing: -2px;
-
-    color: var(--white);
-}
-
-.impact-intro {
-    max-width: 560px;
-
-    margin: 18px auto 0;
-
-    color: #bfc7d4;
-
-    font-size: 18px;
-}
-
-.impact-grid {
-    max-width: 1050px;
-
-    margin: 0 auto;
-
-    display: grid;
-
-    grid-template-columns: repeat(3, 1fr);
-
-    gap: 18px;
-
-    position: relative;
-    z-index: 2;
-}
-
-.impact-card {
-    min-height: 280px;
-
-    padding: 38px 30px;
-
-    background-color: #172236;
-
-    border: 1px solid #303b50;
-
-    display: flex;
-    flex-direction: column;
-
-    justify-content: center;
-
-    transition:
-        transform 0.25s ease,
-        border-color 0.25s ease,
-        background-color 0.25s ease;
-}
-
-.impact-card:hover {
-    transform: translateY(-8px);
-
-    border-color: var(--orange);
-
-    background-color: #1c2940;
-}
-
-.featured-impact {
-    position: relative;
-
-    border-top: 4px solid var(--orange);
-}
-
-.impact-number {
-    display: block;
-
-    color: var(--orange);
-
-    font-size: clamp(58px, 6vw, 82px);
-    font-weight: 700;
-
-    line-height: 0.9;
-
-    letter-spacing: -4px;
-}
-
-.impact-unit {
-    display: block;
-
-    margin-top: 15px;
-
-    color: var(--white);
-
-    font-size: 12px;
-    font-weight: bold;
-
-    letter-spacing: 2px;
-}
-
-.impact-card p {
-    margin: 20px 0 0;
-
-    color: #bfc7d4;
-
-    font-size: 15px;
-
-    line-height: 1.6;
-}
-
-.impact-bottom {
-    max-width: 900px;
-
-    margin: 45px auto 0;
-
-    display: flex;
-    align-items: center;
-
-    gap: 20px;
-
-    position: relative;
-    z-index: 2;
-}
-
-.impact-bottom p {
-    margin: 0;
-
-    white-space: nowrap;
-
-    color: #8e99aa;
-
-    font-size: 11px;
-
-    letter-spacing: 1px;
-
-    text-transform: uppercase;
-}
-
-.impact-line {
-    height: 1px;
-
-    flex: 1;
-
-    background-color: #303b50;
-}
+} 
  
  
 /* MAIN SECTIONS */ 
@@ -550,7 +355,7 @@ a:focus-visible {
  
 .timeline-item p { 
     margin: 4px 0; 
-}
+} 
 
 
 /* RBI LOGO */
@@ -751,35 +556,6 @@ footer {
         width: 100% !important;
         max-width: 350px !important;
     }
-
-
-    /* IMPACT RESPONSIVE */
-
-    .impact-section {
-        padding: 70px 20px;
-    }
-
-    .impact-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .impact-card {
-        min-height: 220px;
-    }
-
-    .impact-bottom {
-        display: block;
-
-        text-align: center;
-    }
-
-    .impact-line {
-        display: none;
-    }
-
-    .impact-bottom p {
-        white-space: normal;
-    }
  
     .content-section { 
         grid-template-columns: 1fr; 
@@ -837,19 +613,6 @@ footer {
  
     .large-text { 
         font-size: 20px; 
-    }
-
-    .impact-section::before {
-        font-size: 170px;
-        top: -35px;
-    }
-
-    .impact-header h2 {
-        font-size: 42px;
-    }
-
-    .impact-number {
-        font-size: 66px;
     }
 
     .experience-heading {
