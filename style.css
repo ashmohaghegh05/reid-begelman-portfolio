@@ -351,7 +351,7 @@ a:focus-visible {
  
 .timeline-item p { 
     margin: 4px 0; 
-}
+} 
 
 
 /* RBI LOGO */
@@ -364,9 +364,12 @@ a:focus-visible {
 }
 
 .rbi-logo {
-    width: 110px;
+    width: 90px !important;
+    max-width: 90px !important;
     height: auto;
+    display: block;
     object-fit: contain;
+    flex: 0 0 90px;
 }
  
 .timeline-year { 
@@ -603,11 +606,14 @@ footer {
     }
 
     .experience-heading {
-        align-items: flex-start;
+        align-items: center;
+        gap: 12px;
     }
 
     .rbi-logo {
-        width: 85px;
+        width: 75px !important;
+        max-width: 75px !important;
+        flex-basis: 75px;
     }
  
     .resume-box { 
