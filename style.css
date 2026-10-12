@@ -351,7 +351,23 @@ a:focus-visible {
  
 .timeline-item p { 
     margin: 4px 0; 
-} 
+}
+
+
+/* RBI LOGO */
+
+.experience-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.rbi-logo {
+    width: 110px;
+    height: auto;
+    object-fit: contain;
+}
  
 .timeline-year { 
     color: var(--orange-dark); 
@@ -584,7 +600,15 @@ footer {
  
     .large-text { 
         font-size: 20px; 
-    } 
+    }
+
+    .experience-heading {
+        align-items: flex-start;
+    }
+
+    .rbi-logo {
+        width: 85px;
+    }
  
     .resume-box { 
         padding: 22px; 
