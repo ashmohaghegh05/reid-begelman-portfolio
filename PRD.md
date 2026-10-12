@@ -513,10 +513,23 @@ Every HTML page must include:
 
 ```html
 <link rel="stylesheet" href="style.css">
+```
+
+---
 
 ## Later
 
-These are features that have not been built yet. Their order reflects Reid's priorities from our second conversation on October 10, 2026.
+The two priorities Reid identified during our second client conversation on October 10, 2026 have now been implemented:
 
-1. Expand the `03 / EXPERIENCE` section with more of Reid's professional and leadership experiences, including his e-board positions.
-2. Add a small amount of additional design while preserving the clean, minimalistic style Reid prefers.
+1. Expand the `03 / EXPERIENCE` section with more professional and leadership experiences, including e-board positions.
+2. Add a small amount of additional design while preserving the clean, minimalistic style.
+
+At this stage, there are no remaining unbuilt features that Reid personally ranked during that conversation.
+
+Possible future additions discussed during the showcase, but not yet ranked or requested by Reid, include:
+
+- Additional photographs from Reid's professional or Babson experiences.
+- A dedicated project or work-sample section.
+- A separate detailed Experience page.
+
+These remain future ideas rather than current requirements because Reid preferred keeping the site minimal and specifically asked for his additional experiences to stay within the existing `03 / EXPERIENCE` section.
