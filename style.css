@@ -228,6 +228,196 @@ a:focus-visible {
     background-color: var(--navy); 
     color: var(--white); 
 } 
+
+
+/* IMPACT IN NUMBERS */
+
+.impact-section {
+    position: relative;
+
+    padding: 90px 30px;
+
+    background-color: var(--navy);
+    color: var(--white);
+
+    overflow: hidden;
+}
+
+.impact-section::before {
+    content: "RB";
+
+    position: absolute;
+
+    top: -70px;
+    right: -15px;
+
+    font-size: 250px;
+    font-weight: bold;
+    line-height: 1;
+
+    color: rgba(255, 255, 255, 0.035);
+
+    pointer-events: none;
+}
+
+.impact-header {
+    position: relative;
+    z-index: 2;
+
+    max-width: 800px;
+
+    margin: 0 auto 55px;
+
+    text-align: center;
+}
+
+.impact-kicker {
+    margin: 0 0 12px;
+
+    color: var(--orange);
+
+    font-size: 12px;
+    font-weight: bold;
+
+    letter-spacing: 2.5px;
+}
+
+.impact-header h2 {
+    margin: 0;
+
+    color: var(--white);
+
+    font-size: clamp(42px, 6vw, 62px);
+    line-height: 1;
+
+    letter-spacing: -2px;
+}
+
+.impact-intro {
+    max-width: 560px;
+
+    margin: 20px auto 0;
+
+    color: #bfc7d4;
+
+    font-size: 18px;
+}
+
+.impact-grid {
+    position: relative;
+    z-index: 2;
+
+    max-width: 1050px;
+
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 18px;
+}
+
+.impact-card {
+    min-height: 280px;
+
+    padding: 38px 30px;
+
+    background-color: #172236;
+
+    border: 1px solid var(--navy-light);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        background-color 0.25s ease;
+}
+
+.impact-card:hover {
+    transform: translateY(-8px);
+
+    border-color: var(--orange);
+
+    background-color: #1c2940;
+}
+
+.featured-impact {
+    border-top: 4px solid var(--orange);
+}
+
+.impact-number {
+    display: block;
+
+    color: var(--orange);
+
+    font-size: clamp(58px, 6vw, 82px);
+    font-weight: bold;
+    line-height: 0.9;
+
+    letter-spacing: -4px;
+}
+
+.impact-unit {
+    display: block;
+
+    margin-top: 16px;
+
+    color: var(--white);
+
+    font-size: 12px;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+.impact-card p {
+    margin: 20px 0 0;
+
+    color: #bfc7d4;
+
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.impact-bottom {
+    position: relative;
+    z-index: 2;
+
+    max-width: 900px;
+
+    margin: 45px auto 0;
+
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+}
+
+.impact-bottom p {
+    margin: 0;
+
+    color: #8e99aa;
+
+    font-size: 11px;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+    text-align: center;
+
+    white-space: nowrap;
+}
+
+.impact-line {
+    flex: 1;
+
+    height: 1px;
+
+    background-color: var(--navy-light);
+}
  
  
 /* MAIN SECTIONS */ 
@@ -545,7 +735,39 @@ footer {
  
     .portrait-area { 
         max-width: 350px; 
-    } 
+    }
+
+
+    /* IMPACT */
+
+    .impact-section {
+        padding: 70px 20px;
+    }
+
+    .impact-header {
+        margin-bottom: 40px;
+    }
+
+    .impact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .impact-card {
+        min-height: 220px;
+    }
+
+    .impact-bottom {
+        display: block;
+        text-align: center;
+    }
+
+    .impact-bottom p {
+        white-space: normal;
+    }
+
+    .impact-line {
+        display: none;
+    }
  
     .content-section { 
         grid-template-columns: 1fr; 
@@ -604,6 +826,38 @@ footer {
     .large-text { 
         font-size: 20px; 
     }
+
+
+    /* IMPACT */
+
+    .impact-section {
+        padding: 60px 18px;
+    }
+
+    .impact-section::before {
+        top: -25px;
+        right: -20px;
+
+        font-size: 160px;
+    }
+
+    .impact-header h2 {
+        font-size: 42px;
+    }
+
+    .impact-intro {
+        font-size: 16px;
+    }
+
+    .impact-card {
+        min-height: 200px;
+        padding: 30px 25px;
+    }
+
+    .impact-number {
+        font-size: 64px;
+    }
+
 
     .experience-heading {
         align-items: center;
