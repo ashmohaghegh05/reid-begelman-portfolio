@@ -147,15 +147,19 @@ a:focus-visible {
  
 .portrait-area { 
     position: relative; 
-    isolation: isolate; 
+    isolation: isolate;
+
+    width: 420px;
+    max-width: 100%;
 } 
  
 .profile-photo { 
     position: relative; 
     z-index: 2; 
  
-    width: 100%; 
-    max-width: 360px; 
+    width: 420px !important; 
+    max-width: 420px !important;
+    height: auto;
  
     display: block; 
  
@@ -227,18 +231,18 @@ a:focus-visible {
 .secondary-button:hover { 
     background-color: var(--navy); 
     color: var(--white); 
-} 
+}
 
 
-/* IMPACT IN NUMBERS */
+/* IMPACT SECTION */
 
 .impact-section {
     position: relative;
 
-    padding: 90px 30px;
-
     background-color: var(--navy);
     color: var(--white);
+
+    padding: 90px 30px;
 
     overflow: hidden;
 }
@@ -248,27 +252,28 @@ a:focus-visible {
 
     position: absolute;
 
-    top: -70px;
-    right: -15px;
+    right: -20px;
+    top: -75px;
 
-    font-size: 250px;
-    font-weight: bold;
+    font-size: 260px;
+    font-weight: 700;
+
+    color: rgba(255, 255, 255, 0.025);
+
     line-height: 1;
-
-    color: rgba(255, 255, 255, 0.035);
 
     pointer-events: none;
 }
 
 .impact-header {
-    position: relative;
-    z-index: 2;
-
-    max-width: 800px;
+    max-width: 1150px;
 
     margin: 0 auto 55px;
 
     text-align: center;
+
+    position: relative;
+    z-index: 2;
 }
 
 .impact-kicker {
@@ -285,18 +290,17 @@ a:focus-visible {
 .impact-header h2 {
     margin: 0;
 
-    color: var(--white);
-
     font-size: clamp(42px, 6vw, 62px);
-    line-height: 1;
 
     letter-spacing: -2px;
+
+    color: var(--white);
 }
 
 .impact-intro {
     max-width: 560px;
 
-    margin: 20px auto 0;
+    margin: 18px auto 0;
 
     color: #bfc7d4;
 
@@ -304,17 +308,18 @@ a:focus-visible {
 }
 
 .impact-grid {
-    position: relative;
-    z-index: 2;
-
     max-width: 1050px;
 
     margin: 0 auto;
 
     display: grid;
+
     grid-template-columns: repeat(3, 1fr);
 
     gap: 18px;
+
+    position: relative;
+    z-index: 2;
 }
 
 .impact-card {
@@ -324,10 +329,11 @@ a:focus-visible {
 
     background-color: #172236;
 
-    border: 1px solid var(--navy-light);
+    border: 1px solid #303b50;
 
     display: flex;
     flex-direction: column;
+
     justify-content: center;
 
     transition:
@@ -345,6 +351,8 @@ a:focus-visible {
 }
 
 .featured-impact {
+    position: relative;
+
     border-top: 4px solid var(--orange);
 }
 
@@ -354,7 +362,8 @@ a:focus-visible {
     color: var(--orange);
 
     font-size: clamp(58px, 6vw, 82px);
-    font-weight: bold;
+    font-weight: 700;
+
     line-height: 0.9;
 
     letter-spacing: -4px;
@@ -363,7 +372,7 @@ a:focus-visible {
 .impact-unit {
     display: block;
 
-    margin-top: 16px;
+    margin-top: 15px;
 
     color: var(--white);
 
@@ -379,13 +388,11 @@ a:focus-visible {
     color: #bfc7d4;
 
     font-size: 15px;
+
     line-height: 1.6;
 }
 
 .impact-bottom {
-    position: relative;
-    z-index: 2;
-
     max-width: 900px;
 
     margin: 45px auto 0;
@@ -394,10 +401,15 @@ a:focus-visible {
     align-items: center;
 
     gap: 20px;
+
+    position: relative;
+    z-index: 2;
 }
 
 .impact-bottom p {
     margin: 0;
+
+    white-space: nowrap;
 
     color: #8e99aa;
 
@@ -406,17 +418,14 @@ a:focus-visible {
     letter-spacing: 1px;
 
     text-transform: uppercase;
-    text-align: center;
-
-    white-space: nowrap;
 }
 
 .impact-line {
-    flex: 1;
-
     height: 1px;
 
-    background-color: var(--navy-light);
+    flex: 1;
+
+    background-color: #303b50;
 }
  
  
@@ -541,7 +550,7 @@ a:focus-visible {
  
 .timeline-item p { 
     margin: 4px 0; 
-} 
+}
 
 
 /* RBI LOGO */
@@ -734,18 +743,20 @@ footer {
     } 
  
     .portrait-area { 
-        max-width: 350px; 
+        width: 350px;
+        max-width: 100%;
+    }
+
+    .profile-photo {
+        width: 100% !important;
+        max-width: 350px !important;
     }
 
 
-    /* IMPACT */
+    /* IMPACT RESPONSIVE */
 
     .impact-section {
         padding: 70px 20px;
-    }
-
-    .impact-header {
-        margin-bottom: 40px;
     }
 
     .impact-grid {
@@ -758,15 +769,16 @@ footer {
 
     .impact-bottom {
         display: block;
-        text-align: center;
-    }
 
-    .impact-bottom p {
-        white-space: normal;
+        text-align: center;
     }
 
     .impact-line {
         display: none;
+    }
+
+    .impact-bottom p {
+        white-space: normal;
     }
  
     .content-section { 
@@ -827,37 +839,18 @@ footer {
         font-size: 20px; 
     }
 
-
-    /* IMPACT */
-
-    .impact-section {
-        padding: 60px 18px;
-    }
-
     .impact-section::before {
-        top: -25px;
-        right: -20px;
-
-        font-size: 160px;
+        font-size: 170px;
+        top: -35px;
     }
 
     .impact-header h2 {
         font-size: 42px;
     }
 
-    .impact-intro {
-        font-size: 16px;
-    }
-
-    .impact-card {
-        min-height: 200px;
-        padding: 30px 25px;
-    }
-
     .impact-number {
-        font-size: 64px;
+        font-size: 66px;
     }
-
 
     .experience-heading {
         align-items: center;
