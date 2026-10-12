@@ -36,3 +36,13 @@ One suggestion was to make the photograph larger, but Reid had previously asked 
 ## AI Decision
 
 For expanding the Experience section, AI suggested adding more entries to the existing timeline, creating expandable experience cards, or creating a separate Experience page. I chose to expand the existing timeline because Reid specifically asked for more experiences under `03 / EXPERIENCE` and wanted to preserve the minimalistic design.
+
+## Change Made
+
+Based on Reid's October 10 feedback, I expanded the `03 / EXPERIENCE`
+section with additional professional and leadership experiences from
+his resume, including his e-board positions.
+
+## Change Commit
+
+[Expand experience section from client feedback](https://github.com/ashmohaghegh05/reid-begelman-portfolio/commit/75de16b871928d604cb48067d08583e747209e1a)
